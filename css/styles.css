@@ -1,0 +1,270 @@
+:root {
+    --main-color: #FFFFFF;
+    --second-color: #2F303A;
+    --team-section-color: #F5F4FA;
+    --first-logo-color: #2196F3;
+    --second-logo-color: #000000;
+    --main-text-color: #212121;
+    --descriprion-color: #757575;
+    --basement-contakts-color: #FFFFFF99;
+    --button-active-color: #188CE8;
+}
+
+/*Global_styles*/
+
+body {
+    background: var(--main-color);
+    font-family: 'Roboto', sans-serif;
+    color: var(--main-text-color);
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+/*Navigation-bar*/
+
+.nav-link,
+.contacts-nav {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+/*Logo*/
+
+.logo {
+    color: var(--first-logo-color);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+.second-logo {
+    color: var(--second-logo-color);
+}
+
+/*Navigation_links*/
+
+.nav-link .current {
+    color: var(--first-logo-color);
+}
+
+.nav-link {
+    color: inherit;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.current {
+    color: var(--first-logo-color);
+}
+
+/*Contacts*/
+
+.contacts-nav {
+    color: var(--descriprion-color);
+}
+
+.contacts-nav:hover,
+.contacts-nav:focus {
+    color: var(--first-logo-color);
+}
+
+/*Face*/
+
+.face {
+    background: var(--second-color);
+    color: var(--main-color)
+}
+
+.face-header {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.order-button {
+    cursor: pointer;
+    background: var(--first-logo-color);
+    border-color: transparent;
+    border-radius: 4px;
+    color: inherit;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+}
+
+.order-button:hover,
+.order-button:focus {
+    background: var(--button-active-color);
+}
+
+/*Features*/
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(50%);
+    clip: rect( 0 0 0 0);
+    overflow: hidden   ;
+}
+
+.feature-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.feature-descr {
+    color: var(--descriprion-color);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+/*Activities gallery*/
+
+.activities-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+/*Team_section*/
+
+.team {
+    background: var(--team-section-color);
+}
+
+.team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.employee {
+    background:  var(--main-color);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.employee-title  {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.employee-position {
+    color: var(--descriprion-color);
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+/*Basement*/
+
+.basement {
+    background: var(--second-color);
+}
+
+/*Basement_logo*/
+
+.basement-logo {
+    color: var(--main-color);
+}
+
+/*Basement_contacts*/
+
+.basement-contacts {
+    font-style: inherit;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.contact-first-color {
+    color: var(--main-color);
+}
+
+.contact-second-color {
+    color: var(--basement-contakts-color);
+}
+
+.contact-first-color:hover,
+.contact-first-color:focus,
+.contact-second-color:hover,
+.contact-second-color:focus {
+    color:  var(--first-logo-color);
+}
+
+/*PORTFOLIO_PAGE_STYLES*/
+
+/*Filters*/
+
+.filt-but {
+    cursor: pointer;
+    background: var(--team-section-color);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    border-color: transparent;
+    border-radius: 4px;
+}
+
+.filt-but:hover,
+.filt-but:focus {
+    background: var(--first-logo-color);
+    color: var(--main-color);
+}
+
+.filters h2,
+.projects h2 {
+    color: var(--main-color);
+}
+
+/*Projects*/
+
+.project-title {
+    color: var(--main-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
+}
+
+.project-descr {
+    color: var(--descriprion-color);
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+}
