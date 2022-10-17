@@ -104,7 +104,8 @@ body {
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
-    padding: 10px 32px;
+    padding: 8px 30px;
+    text-align: center;
 }
 
 .order-button:hover,
