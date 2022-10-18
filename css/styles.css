@@ -18,6 +18,26 @@ body {
     color: var(--main-text-color);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+p {
+    margin: 0px;
+    padding: 0px;
+}
+
 .link {
     text-decoration: none;
 }
@@ -25,6 +45,11 @@ body {
 .list {
     list-style: none;
 }
+
+.section {
+    padding: 94px 0px;
+}
+
 /*Navigation-bar*/
 
 .nav-link,
@@ -33,6 +58,15 @@ body {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+}
+
+.nav-container {
+    margin: 0px auto;
+    width: 1200px;
+    padding: 0px 15px;
+    display: flex;
+    outline: red solid 1px;
+
 }
 
 /*Logo*/
@@ -79,6 +113,13 @@ body {
 
 /*Face*/
 
+.face-container {
+    margin: 0px auto;
+    width: 1200px;
+    padding: 0px 15px;
+    outline: red solid 1px;
+}
+
 .face {
     background: var(--second-color);
     color: var(--main-color)
@@ -115,6 +156,14 @@ body {
 
 /*Features*/
 
+.features-container {
+    margin: 0px auto;
+    width: 1200px;
+    padding: 0px 15px;
+    outline: red solid 1px;
+
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -147,6 +196,14 @@ body {
 
 /*Activities gallery*/
 
+.activities-container {
+    margin: 0px auto;
+    width: 1200px;
+    padding: 0px 15px;
+    outline: red solid 1px;
+
+}
+
 .activities-title {
     font-weight: 700;
     font-size: 36px;
@@ -156,6 +213,13 @@ body {
 }
 
 /*Team_section*/
+
+.team-container {
+    margin: 0px auto;
+    width: 1200px;
+    padding: 0px 15px;
+    outline: red solid 1px;
+}
 
 .team {
     background: var(--team-section-color);
@@ -191,6 +255,13 @@ body {
 }
 
 /*Basement*/
+
+.footer-container {
+    margin: 0px auto;
+    width: 1200px;
+    padding: 0px 15px;
+    outline: red solid 1px;
+}
 
 .basement {
     background: var(--second-color);
@@ -255,6 +326,13 @@ body {
 }
 
 /*Projects*/
+
+.projects-container {
+    margin: 0px auto;
+    width: 1200px;
+    padding: 0px 15px;
+    outline: red solid 1px;
+}
 
 .project-title {
     color: var(--main-text-color);
