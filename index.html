@@ -15,20 +15,20 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header>
+    <header class="underline">
         <!--Navigation_bar-->
         <div class="nav-container">
-            <nav>
+            <nav class="nav-list">
                 <a class="link logo" href="/">Web<span class="second-logo">Studio</span></a>
                 <ul class="list">
-                    <li><a class="link nav-link current" href="./index.html">Студія</a></li>
-                    <li><a class="link nav-link" href="./portfolio.html">Портфоліо</a></li>
-                    <li><a class="link nav-link" href="/">Контакти</a></li>
+                    <li class="list-item"><a class="link nav-link current" href="./index.html">Студія</a></li>
+                    <li class="list-item"><a class="link nav-link" href="./portfolio.html">Портфоліо</a></li>
+                    <li class="list-item"><a class="link nav-link" href="/">Контакти</a></li>
                 </ul>
             </nav>
-            <ul class="list">
-                <li><a class="link contacts-nav" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li><a class="link contacts-nav" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <ul class="list contacts-container">
+                <li class="list-item"><a class="link contacts-nav" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li class="list-item"><a class="link contacts-nav" href="tel:+380961111111">+38 096 111 11 11</a></li>
             </ul>
         </div>
     </header>
@@ -44,20 +44,20 @@
         <section class="features section">
             <div class="features-container">
                 <h2 class="visually-hidden">Наші переваги</h2>
-                <ul class="list feature-list">
-                    <li>
+                <ul class="list features-list">
+                    <li class="feature">
                         <h3 class="feature-title">УВАГА ДО ДЕТАЛЕЙ</h3>
                         <p class="feature-descr">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
                     </li>
-                    <li>
+                    <li class="feature">
                         <h3 class="feature-title">ПУНКТУАЛЬНІСТЬ</h3>
                         <p class="feature-descr">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
                     </li>
-                    <li>
+                    <li class="feature">
                         <h3 class="feature-title">ПЛАНУВАННЯ</h3>
                         <p class="feature-descr">Так само консультація з широким активом значною мірою зумовлює.</p>
                     </li>
-                    <li>
+                    <li class="feature">
                         <h3 class="feature-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
                         <p class="feature-descr">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
                     </li>
@@ -65,17 +65,17 @@
             </div>
         </section>
         <!--Activities gallery-->
-        <section class="activities">
+        <section class="activities section">
             <div class="activities-container">
                 <h2 class="activities-title">Чим ми займаємося</h2>
-                <ul class="list">
-                    <li>
+                <ul class="list activities-list">
+                    <li class="activity">
                         <img src="./images/box1.jpg" alt="development" width="370" height="294">
                     </li>
-                    <li>
+                    <li class="activity">
                         <img src="./images/box2.jpg" alt="optimization" width="370" height="294">
                     </li>
-                    <li>
+                    <li class="activity">
                         <img src="./images/box3.jpg" alt="design" width="370" height="294">
                     </li>
                 </ul>
@@ -85,30 +85,38 @@
         <section class="team section">
             <div class="team-container">
                 <h2 class="team-title">Наша команда</h2>
-                <ul class="list">
+                <ul class="list workers-list">
                     <!--Employee #1-->
                     <li class="employee">
                         <img src="./images/team_card1.jpg" alt="Ihor Demyanenko" width="270" height="260">
-                        <h3 class="employee-title">Ігор Дем'яненко</h3>
-                        <p class="employee-position">Product Designer</p>
+                        <div class="description">
+                            <h3 class="employee-title">Ігор Дем'яненко</h3>
+                            <p class="employee-position">Product Designer</p>
+                        </div>
                     </li>
                     <!--Employee #2-->
                     <li class="employee">
                         <img src="./images/team_card2.jpg" alt="Ольга Рєпіна" width="270" height="260">
-                        <h3 class="employee-title">Ольга Рєпіна</h3>
-                        <p class="employee-position">Frontend Developer</p>
+                        <div class="description">
+                            <h3 class="employee-title">Ольга Рєпіна</h3>
+                            <p class="employee-position">Frontend Developer</p>
+                        </div>
                     </li>
                     <!--Employee #3-->
                     <li class="employee">
                         <img src="./images/team_card3.jpg" alt="Микола Тарасов" width="270" height="260">
-                        <h3 class="employee-title">Микола Тарасов</h3>
-                        <p class="employee-position">Marketing</p>
+                        <div class="description">
+                            <h3 class="employee-title">Микола Тарасов</h3>
+                            <p class="employee-position">Marketing</p>
+                        </div>                       
                     </li>
                     <!--Employee #4-->
                     <li class="employee">
                         <img src="./images/team_card4.jpg" alt="Mykhailo Yermakov" width="270" height="260">
-                        <h3 class="employee-title">Михайло Єрмаков</h3>
-                        <p class="employee-position">UI Designer</p>
+                        <div class="description">
+                            <h3 class="employee-title">Михайло Єрмаков</h3>
+                            <p class="employee-position">UI Designer</p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -117,12 +125,12 @@
     <!--Basement-->
     <footer class="basement">
         <div class="footer-container">
-            <a class="link logo" href="./index.html">Web<span class="basement-logo">Studio</span></a>
+            <a class="link basement-logo" href="./index.html">Web<span class="basement-logo-second">Studio</span></a>
             <address class="basement-contacts">
                 <ul class="list">
-                    <li><a class="link contact-first-color" href="https://goo.gl/maps/C3TWV4PwisccWHNz8" target="_blank" rel="noopener norefererr nofollow">м. Київ, пр-т Лесі Українки, 26</a></li>
-                    <li><a class="link contact-second-color" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    <li><a class="link contact-second-color" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                    <li class="contact-item"><a class="link contact-first-color" href="https://goo.gl/maps/C3TWV4PwisccWHNz8" target="_blank" rel="noopener norefererr nofollow">м. Київ, пр-т Лесі Українки, 26</a></li>
+                    <li class="contact-item"><a class="link contact-second-color" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li class="contact-item"><a class="link contact-second-color" href="tel:+380961111111">+38 096 111 11 11</a></li>
                 </ul>
             </address>
         </div>
