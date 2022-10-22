@@ -9,6 +9,7 @@
     --basement-contakts-color: #FFFFFF99;
     --button-active-color: #188CE8;
     --underline-color: #ECECEC;
+    --border-color: #EEEEEE;
 }
 
 /*Global_styles*/
@@ -300,9 +301,6 @@ img {
 
 .description {
     padding: 30px;
-    border-right: solid 1px var(--descriprion-color);
-    border-bottom: solid 1px var(--descriprion-color);
-    border-left:  solid 1px var(--descriprion-color);
 }
 
 .employee-title  {
@@ -354,7 +352,7 @@ img {
 /*Basement_contacts*/
 
 .contact-item:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 5px;
 }
 
 .basement-contacts {
@@ -394,6 +392,7 @@ img {
     letter-spacing: 0.03em;
     border-color: transparent;
     border-radius: 4px;
+    padding: 4px 20px;
 }
 
 .filt-but:hover,
@@ -416,12 +415,38 @@ img {
     /* outline: red solid 1px; */
 }
 
+.filters-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+
+}
+
+.button:not(:last-child) {
+    margin-right: 8px;
+}
+
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.description-box {
+    /* outline: solid rebeccapurple 1px; */
+    padding: 20px 24px;
+    border-right: solid 1px var(--border-color);
+    border-bottom: solid 1px var(--border-color);
+    border-left: solid 1px var(--border-color);
+}
+
 .project-title {
     color: var(--main-text-color);
     font-weight: 700;
     font-size: 18px;
     line-height: 2.0;
     letter-spacing: 0.06em;
+    margin-bottom: 4px;
 }
 
 .project-descr {
